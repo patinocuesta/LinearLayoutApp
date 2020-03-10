@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nom">nom</string>
+    <string name="prenom">prenom</string>
+    <string name="envoyer">envoyer</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nom">Apellido</string>
+    <string name="prenom">Nombre</string>
+    <string name="envoyer">Enviar</string>
+</resources>

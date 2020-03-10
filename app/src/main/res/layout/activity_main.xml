@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/nom"
+    />
+
+    <EditText
+    android:id="@+id/nom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/prenom"
+    />
+
+    <EditText
+    android:id="@+id/prenom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="age"
+    />
+
+    <EditText
+    android:id="@+id/age"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Origine"
+    />
+
+    <Spinner
+    android:id="@+id/origin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Situation"
+    />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/Celibataire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celibataire"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/Marrie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marrié"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/Divorce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divorcé"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/Veuf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veuf/veuve"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enfants à charge"
+        />
+    <Spinner
+        android:id="@+id/enfants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enfants"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appartament recherché"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/Studio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Studio"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/F2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F2"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F3"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/F4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F4"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F5"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/Maison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maison"
+            android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/envoyer"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:onClick="afficher"
+    android:text="@string/envoyer"
+    />
+
+</LinearLayout>
